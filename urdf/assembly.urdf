@@ -8,6 +8,29 @@
     </visual>
   </link>
 
+<link name="torso">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <sphere radius="5"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.065 0 0.0"/>
+      <geometry>
+        <mesh filename="package://robot_description/meshes/base_link_simple.DAE"/>
+      </geometry>
+    </collision>
+    <collision_checking>
+      <origin rpy="0 0 0" xyz="-0.065 0 0.0"/>
+      <geometry>
+        <cylinder length="0.7" radius="0.27"/>
+      </geometry>
+    </collision_checking>
+    <inertial>
+      ...
+    </inertial>
+  </link>  
   <link name="right_leg">
     <visual>
       <geometry>
